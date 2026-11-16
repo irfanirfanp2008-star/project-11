@@ -8,9 +8,9 @@ for (let i = 1; i <= 30; i++) {
         data += "<tr>";
     }
 
-    if (i){
+   
         data += '<td><button class="avseat">' + i + '</button></td>';
-    }
+    
 
     if (i == 5 || i == 10 || i == 15 || i == 20 || i == 25 || i == 30) {
         data += "</tr>";

@@ -1,0 +1,342 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background: black;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 5px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+.logo i {
+    font-size: 42px;
+    color: rgb(255, 121, 0);
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 0%;
+}
+
+header h1 span {
+    color: rgb(255, 121, 0);
+}
+
+.tagline {
+    color: gray;
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.heading {
+    margin: 15px 5px;
+    font-size: 17px;
+}
+
+.heading{
+    color: rgb(255, 121, 0);
+    margin-right: 8px;
+}
+.subheading i {
+    color: rgb(255, 121, 0);
+    margin-right: 8px;
+}
+
+.movies {
+    display: flex;
+    gap: 18px;
+}
+
+.movie {
+    width: 33.33%;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 17px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.movie img {
+    width: 100%;
+    height: 155px;
+}
+
+.movie h3 {
+    margin: 5px 0p 15px;
+}
+
+.avengers {
+    color: rgb(91, 170, 66);
+}
+
+.ramayana {
+    color: rgb(198, 170, 131);
+}
+
+.btn {
+    width: 65%;
+    padding: 10px;
+    background: rgb(255, 121, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.bottom {
+    display: flex;
+    gap: 15px;
+    margin: 18px 0;
+}
+
+.seatbox {
+    width: 62%;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 17px;
+    padding: 15px 20px;
+    background: #101010;
+}
+
+.subheading {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.seattable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 18px 15px;
+    table-layout: fixed;
+}
+.seattable td {
+    text-align: center;
+    padding: 8px;
+}
+.message {
+    text-align: center;
+    color: rgb(255, 121, 0);
+    font-size: 14px;
+    padding: 5px;
+}
+
+.seattable button {
+    width: 100%;
+    padding: 10px 4px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.avseat {
+    background: rgb(91, 170, 66);
+}
+
+.slseat {
+    background: rgb(255, 121, 0);
+}
+
+.bokseat {
+    background: red;
+}
+
+.legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.legend i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.avicon {
+    color: rgb(91, 170, 66);
+}
+
+.bokicon {
+    color: red;
+}
+
+.slicon {
+    color: rgb(255, 121, 0);
+}
+
+.booking {
+    width: 38%;
+    border: 2px solid rgb(255, 121, 0);
+    border-radius: 17px;
+    background: #101010;
+    overflow: hidden;
+}
+
+.booking .subheading {
+    padding: 15px 20px;
+    margin: 0px;
+    border-bottom: 1px solid #555;
+}
+
+.summary {
+    display: flex;
+    gap: 8px;
+    padding: 15px 10px 5px;
+}
+
+
+.poster {
+    width: 40%;
+    height: 140px;
+    object-fit: fill;
+    border: 1px solid rgb(255, 121, 0);
+    border-radius: 5px;
+}
+
+.details {
+    width: 60%;
+}
+
+.details h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.movieD {
+    color: rgb(255, 121, 0);
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.details p {
+    font-size: 12px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.details p i {
+    color: rgb(255, 121, 0);
+    margin-right: 7px;
+}
+
+.details p span {
+    float: right;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 12px;
+    padding: 10px 0px;
+    border-top: 1px solid rgb(85, 85, 85);
+}
+
+.total h3 {
+    font-size: 16px;
+}
+
+.totalprice {
+    color: rgb(255, 121, 0);
+}
+
+.actions {
+    padding: 8px 25px;
+}
+
+.confirm {
+    width: 100%;
+    padding: 11px;
+    background: rgb(255, 121, 0);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.reset {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(255, 121, 0);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.reset i {
+    color: rgb(255, 121, 0);
+    margin-right: 5px;
+}
+
+.status {
+    display: flex;
+    gap: 10px;
+    padding: 0 22px 8px;
+}
+
+.available
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.available {
+    border-color: rgb(91, 170, 66);
+}
+.booked
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.booked {
+    border-color: red;
+}
+
+.available i {
+    color: rgb(91, 170, 66);
+    font-size: 22px;
+}
+
+.booked i {
+    color: red;
+    font-size: 22px;
+}
+
+.status-text {
+    font-size: 11px;
+}
+
+.status h3 {
+    margin-top: 3px;
+    font-size: 16px;
+}

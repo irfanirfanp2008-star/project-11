@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="form">
+
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-clapperboard"></i>
+            </div>
+
+            <div>
+                <h1>CINEMA <span>BOOKING</span></h1>
+                <p class="tagline">Book Your Movie Tickets Online</p>
+            </div>
+        </header>
+
+        <h3 class="heading">
+            <i class="fa-solid fa-clapperboard"></i>
+            1. Select Your movie
+        </h3>
+
+        <div class="movies">
+
+            <div class="movie active" id="card1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJrlOXkIoUny_WsKZzYWh6yrLk90FyUhM0n6tX6IpXg&s=10" alt="Avengers DoomsDay">
+                <h3 class="avengers">Avengers DoomsDay</h3>
+                <p>Ticket Price: ₹150</p>
+                <button type="button" id="movie1" class="btn">
+                    <i class="fa-solid fa-ticket"></i> Book Ticket
+                </button>
+            </div>
+
+            <div class="movie" id="card2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3Ar_CztsqacA8PMpknT0pICkbhtlKZBIAESq87291g&s=10" alt="Ramayana">
+                <h3 class="ramayana">Ramayana</h3>
+                <p>Ticket Price: ₹150</p>
+                <button type="button" id="movie2" class="btn">
+                    <i class="fa-solid fa-ticket"></i> Book Ticket
+                </button>
+            </div>
+
+            <div class="movie" id="card3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk5Vl9CllxH1R6h_w9x4graW2XnqLVq4qZHWlcWExZA&s=10" alt="Scene">
+                <h3>Scene</h3>
+                <p>Ticket Price: ₹150</p>
+                <button type="button" id="movie3" class="btn">
+                    <i class="fa-solid fa-ticket"></i> Book Ticket
+                </button>
+            </div>
+
+        </div>
+
+        <div class="bottom" id="bottom">
+
+            <div class="seatbox">
+
+                <h3 class="subheading">
+                    <i class="fa-solid fa-couch"></i>
+                    2. Select Your Seats
+                </h3>
+
+                <table class="seattable" id="allseat">
+                    <tbody id="seats"></tbody>
+                </table>
+
+                <div class="legend">
+                    <span class="avicon"><i class="fa-solid fa-square available-icon"></i></span> <span>Available  </span>
+                    <span class="bokicon"><i class="fa-solid fa-square booked-icon"></i></span> <span>Booked  </span>
+                    <span class="slicon"><i class="fa-solid fa-square selected-icon"></i></span> <span>Selected  </span>
+                </div>
+
+            </div>
+
+            <div class="booking">
+
+                <h3 class="subheading">
+                    <i class="fa-solid fa-rectangle-list"></i>
+                    3. Booking Summary
+                </h3>
+
+                <div class="summary">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJrlOXkIoUny_WsKZzYWh6yrLk90FyUhM0n6tX6IpXg&s=10" alt="Selected movie" class="poster" id="poster">
+
+                    <div class="details">
+
+                        <h4>Selected Movie</h4>
+                        <h3 class="movieD" id="movieD">Avengers DoomsDay</h3>
+
+                        <p>
+                            <i class="fa-solid fa-couch"></i>
+                            Selected Seats
+                            <span id="count">2</span>
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-tag"></i>
+                            Price per Seats
+                            <span>₹150</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="total">
+                    <h3>Total Amount</h3>
+                    <h3 class="totalprice">₹<span id="total">300</span></h3>
+                </div>
+
+                <div class="actions">
+
+                    <button id="confirm" class="confirm">
+                        <i class="fa-solid fa-ticket"></i> Confirm booking
+                    </button>
+                    <div class="message" id="message"></div>
+
+                    <button id="reset" class="reset">
+                        <i class="fa-solid fa-rotate"></i> RESET BOOKING
+                    </button>
+
+                    <button id="reset2" class="reset">
+                        <i class="fa-solid fa-moon"></i> CHANGE THEME
+                    </button>
+
+                </div>
+
+                <div class="status">
+
+                    <div class="available">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div>
+                            <p class="status-text">Available Seats</p>
+                            <h3 id="avail"></h3>
+                        </div>
+                    </div>
+
+                    <div class="booked">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div>
+                            <p class="status-text">Booked Seats</p>
+                            <h3 id="book"></h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </form>
+
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

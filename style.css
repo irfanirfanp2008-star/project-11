@@ -145,15 +145,15 @@ header h1 span {
 }
 
 .avseat {
-    background: rgb(91, 170, 66);
+    background-color: green;
 }
 
 .slseat {
-    background: rgb(255, 121, 0);
+    background-color: green;
 }
 
 .bokseat {
-    background: red;
+   background-color: red;
 }
 
 .legend {

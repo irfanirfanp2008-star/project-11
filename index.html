@@ -33,7 +33,7 @@
         <div class="movies">
 
             <div class="movie active" id="card1">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJrlOXkIoUny_WsKZzYWh6yrLk90FyUhM0n6tX6IpXg&s=10" alt="Avengers DoomsDay">
+                <img id="doom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJrlOXkIoUny_WsKZzYWh6yrLk90FyUhM0n6tX6IpXg&s=10" alt="Avengers DoomsDay">
                 <h3 class="avengers">Avengers DoomsDay</h3>
                 <p>Ticket Price: ₹150</p>
                 <button type="button" id="movie1" class="btn">
@@ -42,7 +42,7 @@
             </div>
 
             <div class="movie" id="card2">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3Ar_CztsqacA8PMpknT0pICkbhtlKZBIAESq87291g&s=10" alt="Ramayana">
+                <img id="ram" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3Ar_CztsqacA8PMpknT0pICkbhtlKZBIAESq87291g&s=10" alt="Ramayana">
                 <h3 class="ramayana">Ramayana</h3>
                 <p>Ticket Price: ₹150</p>
                 <button type="button" id="movie2" class="btn">
@@ -51,7 +51,7 @@
             </div>
 
             <div class="movie" id="card3">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk5Vl9CllxH1R6h_w9x4graW2XnqLVq4qZHWlcWExZA&s=10" alt="Scene">
+                <img id="scen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk5Vl9CllxH1R6h_w9x4graW2XnqLVq4qZHWlcWExZA&s=10" alt="Scene">
                 <h3>Scene</h3>
                 <p>Ticket Price: ₹150</p>
                 <button type="button" id="movie3" class="btn">
@@ -101,7 +101,7 @@
                         <p>
                             <i class="fa-solid fa-couch"></i>
                             Selected Seats
-                            <span id="count">2</span>
+                            <span id="count">0</span>
                         </p>
 
                         <p>
@@ -116,21 +116,21 @@
 
                 <div class="total">
                     <h3>Total Amount</h3>
-                    <h3 class="totalprice">₹<span id="total">300</span></h3>
+                    <h3 class="totalprice">₹<span id="total">0</span></h3>
                 </div>
 
                 <div class="actions">
 
-                    <button id="confirm" class="confirm">
+                    <button id="confirm" type="button" class="confirm">
                         <i class="fa-solid fa-ticket"></i> Confirm booking
                     </button>
-                    <div class="message" id="message"></div>
+                    <div class="message" id="msg"></div>
 
-                    <button id="reset" class="reset">
+                    <button id="reset" type="button" class="reset">
                         <i class="fa-solid fa-rotate"></i> RESET BOOKING
                     </button>
 
-                    <button id="reset2" class="reset">
+                    <button id="theme" type="button" class="reset">
                         <i class="fa-solid fa-moon"></i> CHANGE THEME
                     </button>
 

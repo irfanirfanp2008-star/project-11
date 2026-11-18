@@ -106,7 +106,7 @@ confirm.addEventListener("click", function() {
                 seat[j].style.backgroundColor = "red";
             }
         }
-         book.innerHTML = booked;
+        book.innerHTML = booked;
         avail.innerHTML = 30 - booked;
         msg.innerHTML = "Booking Successful!";
         count = 0;
@@ -118,7 +118,7 @@ reset.addEventListener("click", function() {
 
     for (let j = 0; j < seat.length; j++) {
 
-        if (seat[j].style.backgroundColor == "darkorange") {
+        if (seat[j].style.backgroundColor == "darkorange" || seat[j].style.backgroundColor == "red") {
             seat[j].style.backgroundColor = "green";
         }
     }
